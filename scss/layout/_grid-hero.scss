@@ -1,0 +1,11 @@
+.hero{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat 1fr 1fr 1fr ;
+    grid-template-rows: repeat 1fr 1fr 1fr; 
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
