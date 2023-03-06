@@ -1,3 +1,4 @@
+/*Class pagina index.html*/
 main {
     grid-area: main;
     background-color: #e8e5ed;
@@ -8,7 +9,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    gap: 5%;
+    gap: 50%;
     div {
         a{
         &:hover{text-decoration: none;
@@ -18,7 +19,7 @@ main {
         }
 }
 }
-/*CLASS PAGINA index.html*/
+/*Class PAGINA index.html
 .img-1 {
     width: auto;
     position:relative;
@@ -26,8 +27,8 @@ main {
     }
 .img-2{
     position:relative;
-    right: -60px;
-}
+    right: -60px;  
+}*/
 .item-2   {
     text-decoration: none;
     color:black;

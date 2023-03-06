@@ -31,6 +31,7 @@ box-sizing: border-box;
         "main main main"
         "footer footer footer";
 }
+/*CLASS PAGINA index.html*/
 header {
         grid-area: header;
         display: flex; 
