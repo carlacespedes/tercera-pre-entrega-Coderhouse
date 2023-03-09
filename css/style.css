@@ -232,57 +232,79 @@ main div span {
   justify-content: center;
   align-content: center; }
 
-.text-banner-fav {
+.main-favoritos {
+  background-color: #edeae5;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-weight: lighter;
-  font-size: 35px;
-  font-family: 'Poppins', sans-serif;
-  align-items: center; }
-
-main div img {
-  border-radius: 25%; }
-
-.foto-favuno {
   width: 100%;
-  display: flex;
+  height: 120vh;
+  background-color: #e8e5ed;
+  border-radius: 15%;
   flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.foto-favdos {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.foto-favtres {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5%; }
-
-.textdefotos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-weight: lighter;
-  font-size: 18px;
   justify-content: space-evenly;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  list-style: none; }
-
-main div span a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px; }
+  gap: 1%;
+  padding: 2%;
+  grid-template-columns: repeat 3, 1 fr;
+  grid-template-rows: repeat 2, 1 fr;
+  grid-template-areas: "text-banner-fav text-banner-fav text-banner-fav" "foto-favuno foto-favdos foto-favtres"; }
+  .main-favoritos div a:hover {
+    text-decoration: none;
+    color: #4d4c4c;
+    cursor: pointer; }
+  .main-favoritos div .text-banner-fav {
+    grid-area: text-banner-fav;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    gap: 2px; }
+  .main-favoritos div .foto-favuno {
+    grid-area: foto-favuno;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .main-favoritos div .foto-favdos {
+    grid-area: foto-favdos;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .main-favoritos div .foto-favtres {
+    grid-area: foto-favtres;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .main-favoritos div .texto-fotos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: lighter;
+    font-size: 18px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none; }
+  .main-favoritos div .texto-precios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center; }
+  .main-favoritos div main div img {
+    border-radius: 25%; }
 
 .registrarme-banner {
   font-weight: bolder;
@@ -314,89 +336,85 @@ main div span a {
     height: 210vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 8% repeat(1, 1fr) 19%;
-    grid-template-areas: "header header" "main main " "footer footer"; }
-  header {
-    font-size: 12px; }
-  .logo {
-    width: 60%;
-    margin: 30px 2px 2px 40px; }
-  main {
-    grid-area: main;
-    width: 100%;
-    height: auto;
-    background-color: #e8e5ed;
-    border-radius: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6%; }
-    main div a:hover {
+    grid-template-areas: "header header" "main main " "footer footer";
+    /*media QUERIES index*/ }
+    .hero header {
+      font-size: 12px; }
+    .hero .logo {
+      width: 60%;
+      margin: 30px 2px 2px 40px; }
+    .hero main {
+      grid-area: main;
+      width: 100%;
+      height: auto;
+      background-color: #e8e5ed;
+      border-radius: 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6%; }
+      .hero main div a:hover {
+        text-decoration: none;
+        color: #4d4c4c;
+        cursor: pointer; }
+    .hero footer {
+      grid-area: footer;
+      display: flex;
+      width: 100%;
+      background-color: #E4C6BD;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px; }
+    .hero .iconos-footer {
       text-decoration: none;
-      color: #4d4c4c;
-      cursor: pointer; }
-  footer {
-    grid-area: footer;
-    display: flex;
-    width: 100%;
-    background-color: #E4C6BD;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px; }
-  .iconos-footer {
-    text-decoration: none;
-    list-style: none;
-    align-items: center; }
-  .texto-footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-decoration: none;
-    list-style: none;
-    text-align: left;
-    color: #FFFFFF; }
-  .navbar {
-    display: flex;
-    list-style: none;
-    gap: 5px;
-    margin: 40px 30px 50px 0px; }
-  /*media QUERIES index
-
-.img-1 {
-        right: -350px;
-        width: 280px;
-        height: 450px;
-}
-.img-2{
-       
-        right: -150px;
-        width: 280px;
-        height: 450px;
-}
-.item-2{
-        text-decoration: none;
-        color:black;
-        font-family:'Poppins', sans-serif;
-        font-size: 12px; 
-        position:relative;
-        right: 50px;
-        bottom: 100px;
-        background-color:#ffffff1f;
-        border-radius:  10%;
-}
-.item-4{
-        text-decoration: none;
-        color:black;
-        font-family:'Poppins', sans-serif;
-        font-size: 12px; 
-        position:relative;
-        right: 46px;
-        bottom: 105px;
-        background-color:#ffffff1f;
-        border-radius:  10%;
-}*/
+      list-style: none;
+      align-items: center; }
+    .hero .texto-footer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-decoration: none;
+      list-style: none;
+      text-align: left;
+      color: #FFFFFF; }
+    .hero .navbar {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      margin: 40px 30px 50px 0px; }
+    .hero .img-1 {
+      position: relative;
+      right: -350px;
+      width: 280px;
+      height: 450px; }
+    .hero .img-2 {
+      position: relative;
+      right: -150px;
+      width: 280px;
+      height: 450px; }
+    .hero .item-2 {
+      text-decoration: none;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      position: relative;
+      right: 50px;
+      bottom: 100px;
+      background-color: #ffffff1f;
+      border-radius: 10%; }
+    .hero .item-4 {
+      text-decoration: none;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      position: relative;
+      right: 66px;
+      bottom: 105px;
+      background-color: #ffffff1f;
+      border-radius: 10%; }
   .registrarme-banner {
     font-size: 18px;
     margin: 10px 50px 50px 50px; }
