@@ -2,12 +2,12 @@
     background-color: #edeae5;
     display: flex;
     width: 100%;
-    height: 120vh;
-    background-color: #e8e5ed;
+    height: 130vh;
     border-radius: 15%;
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
+    row-gap: 5px;
     gap: 1%;
     padding: 2%;
     grid-template-columns: repeat (3, 1 fr);
@@ -18,7 +18,7 @@
     div {
         a{
         &:hover{text-decoration: none;
-        color:rgb(77, 76, 76); 
+        color:#E4CD01; 
         cursor:pointer;
         }}
 .text-banner-fav {  
@@ -31,6 +31,12 @@
     font-family:'Poppins', sans-serif;
     align-items:center;
     gap: 2px;
+        }
+    .texto-precios {
+            padding: 3%;
+            font-size: 24px;
+            text-align: center;   
+            justify-content: space-evenly;
         }
 .foto-favuno {
     grid-area: foto-favuno;
@@ -67,19 +73,7 @@
     font-family:'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-.texto-precios {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color:black;
-    font-family:'Poppins', sans-serif;
-    font-size: 16px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
+} 
 main div img {
     border-radius: 25%
 }}}
