@@ -1,16 +1,6 @@
-
-
-
-
-
-
-
-
-
-
 .registrarme-banner {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 24px;
     font-family:'Poppins', sans-serif;
     text-align: center;
     margin: 10px 215px 80px 260px;  
@@ -28,7 +18,7 @@
     flex-flow: column wrap;
     justify-content: none;
     justify-content:none;
-    padding:60px 350px 40px 350px;
+    padding:60px 450px 40px 450px;
     font-family:'Poppins', sans-serif;
 }
 main form input {
@@ -36,4 +26,18 @@ main form input {
 }
 main form label {
     font-size: 15px;
+}
+@media(max-width:768px) {
+    .registrarme-banner{
+            font-size: 20px;
+            margin: 30px 50px 50px 50px;
+    }
+    .registrarme {
+            font-size: 15px;
+    }}
+    .class-formu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 30px 130px 30px 130px;
+        font-family:'Poppins', sans-serif;
 }
