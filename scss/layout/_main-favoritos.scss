@@ -7,7 +7,7 @@
     justify-content:center;
     align-items: center;
     row-gap: 8px;
-    padding: 2%;
+    padding: 5%;
     grid-template-columns: repeat (3, 1 fr);
     grid-template-rows: repeat 12% (1, 1 fr);
     grid-template-areas: 
@@ -22,18 +22,17 @@
 .text-banner-fav {  
     grid-area: text-banner-fav;    
     display: grid;
-    /*flex-direction: row;*/
-    font-size: 22px;
-    /*flex-wrap: wrap;    me lo dijo inspector */ 
+    font-size: 28px;
     font-weight: lighter;
     font-family:'Poppins', sans-serif;
     justify-content: center;
     align-items:center;
     text-align: center;
     gap: 3px;
-    padding: 8%;
+    padding: 4%;
         }
 .corazon{
+
     margin: 10px 105px 10px 105px;
 }
 .foto-favuno {
