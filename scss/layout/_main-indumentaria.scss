@@ -2,7 +2,7 @@
     background-color: #edeae5;
     display: grid;
     width: 100%;
-    height: 180vh;
+    height: auto;
     font-family:'Poppins', sans-serif;
     font-size: 18px;
     column-gap: 30px;
@@ -15,12 +15,13 @@
     "f-uno f-dos f-tres"
     "f-uno f-dos f-tres"
     "f-cuatro f-cinco f-seis"
-    "f-cuatro f-cinco f-seis"
-    }
-main div span a:hover {
-    color:#E4CD01; 
-    cursor: pointer
-    }
+    "f-cuatro f-cinco f-seis";
+    div {
+        a{
+        &:hover{text-decoration: none;
+        color:#E4CD01; 
+        cursor:pointer;
+        }}}}
 main div span a {
     text-decoration: none;
     list-style: none;
@@ -77,5 +78,5 @@ main div span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }

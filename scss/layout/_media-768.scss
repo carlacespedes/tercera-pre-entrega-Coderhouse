@@ -2,14 +2,13 @@
 .hero {
         display:grid;
         width: 100%;
-        height: 210vh;
+        height: auto;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 8% repeat(1, 1fr)19%; 
+        grid-template-rows: 12% 1fr 19%; 
         grid-template-areas:
         "header header"
         "main main "
         "footer footer";
-
         header {
         font-size: 12px;
         }
@@ -18,7 +17,7 @@
         margin: 30px 2px 2px 40px
         }
         
-main {
+main {        /*main index y resgistracion*/
         grid-area: main;
         width: 100%;
         height: auto;
@@ -26,8 +25,8 @@ main {
         border-radius: 15%;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        padding: 6%; 
         div {
                 a{
                 &:hover{text-decoration: none;
@@ -65,32 +64,32 @@ footer{
 .navbar {
         display: flex;
         list-style: none;
+        font-size: 15px;
         gap: 5px;
         margin: 40px 30px 50px 0px;   
 } 
 
-/*media QUERIES index*/
-
+/*media QUERIES 768 index*/
 .img-1 {
         position:relative;
-        right: -350px;
+        right: -50px;
         width: 280px;
-        height: 450px;
+        height: 460px;
 }
 .img-2{
         position:relative;
-        right: -150px;
+        right: 10px;
         width: 280px;
-        height: 450px;
+        height: 460px;
 }
 .item-2{
         text-decoration: none;
         color:black;
         font-family:'Poppins', sans-serif;
-        font-size: 10px; 
+        font-size: 20px; 
         position:relative;
-        right: 50px;
-        bottom: 100px;
+        right: 170px;
+        bottom: 90px;
         background-color:#ffffff1f;
         border-radius:  10%;
 }
@@ -98,25 +97,47 @@ footer{
         text-decoration: none;
         color:black;
         font-family:'Poppins', sans-serif;
-        font-size: 10px; 
+        font-size: 20px; 
         position:relative;
-        right: 66px;
-        bottom: 105px;
+        right: -500px;
+        bottom: 110px;
         background-color:#ffffff1f;
         border-radius:  10%;
 }
 }
+.main-indumentaria {
+        background-color: #edeae5;
+        display: grid;
+        width: 100%;
+        border-radius: 15%;
+        height: auto;
+        font-family:'Poppins', sans-serif;
+        grid-template-columns: repeat (2, 1 fr);
+        grid-template-rows: repeat (3, 1 fr);
+        grid-template-areas: 
+        "f-uno f-dos"
+        "f-tres f-cuatro"
+        "f-cinco f-seis";
+}
+/*media queries registrarse*/
+
 .registrarme-banner{
-        font-size: 18px;
-        margin: 10px 50px 50px 50px;
+        font-size: 16px;
+        margin: 30px 50px 50px 50px;
+}
+.registrarme {
+        font-size: 16px;
 }
 .class-formu {
         display: flex;
         flex-flow: column wrap;
-        padding:inherit;
+        padding: 30px 150px 30px 150px;
         font-family:'Poppins', sans-serif;
 }
-}
+
+
+/*media queries favoritos??*/
+
 .text-banner-fav {      
                 display: flex;
                 flex-direction: column;
@@ -126,4 +147,5 @@ footer{
                 font-family:'Poppins', sans-serif;
                 align-items:center;
                 padding: 3%;
+}
 }
